@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Zahra</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Catering Zahra</a>
+        <button class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#about">Kami</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#lokasi">Lokasi</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero-carousel" id="carousel">
+      <a href="#" class="carousel-control prev" onclick="changeSlide(-1)"
+        >&#10094;</a
+      >
+      <a href="#" class="carousel-control next" onclick="changeSlide(1)"
+        >&#10095;</a
+      >
+
+      <div
+        class="carousel-item active"
+        style="background-image: url('./img/14.png')"
+      >
+        <div class="carousel-content">
+          <h1>Best Food</h1>
+          <p>Kenikmatan rasa yang tak terlupakan</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('./img/14.png')">
+        <div class="carousel-content">
+          <h1>Order now</h1>
+          <p>Cita rasa yang tak tergantikan</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('./img/14.png')">
+        <div class="carousel-content">
+          <h1>GOOD TASTE,GOOD MOOD</h1>
+          <p>Skip the Stress, Order the Feast</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-below-slider1">
+      <section id="about" class="container">
+        <div class="section-title">
+          <h1>Tentang Kami</h1>
+<div class="about-content">
+  <div class="about-image-container">
+    <img src="./img/14.png" alt="About Us" class="about-image" />
+  </div>
+  <div class="about-text">
+    <h2>Catering Zahra</h2>
+    <p>
+      Kami menrima pesanan mulai dari tahlilan ,ulang tahun 
+      ,kitanan , Prasmanan , tumpeng dan lain lain.
+      Anda juga dapat melakukan request untuk lauk pauk 
+      yang di inginkan dan kami juga dapat merekomendasikan 
+      paket sesuai badget yang anda miliki..  
+    </p>
+  </div>
+</div>
+      </section>
+
+      <div class="content-below-slider">
+        <section id="produk" class="container">
+          <div class="section-title">
+            <h1>Best Seller</h1>
+          </div>
+          <div class="produk-grid">
+            <div class="produk-card">
+              <img src="./img/1.jpeg"/>
+              <div class="produk-card-content">
+                <h3>TUMPENG</h3>
+                <p>Request lauk pauk sesuai keinginan</p>
+                <p class="harga">Rp 200.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/2.jpeg" />
+              <div class="produk-card-content">
+                <h3>NASI KUNING</h3>
+                <p class="harga">Rp 18.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/3.jpeg" />
+              <div class="produk-card-content">
+                <h3>PAKET RENDANG</h3>
+                <p class="harga">Rp 20.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/4.jpeg" />
+              <div class="produk-card-content">
+                <h3>AYAM BAKAR</h3>
+                <p class="harga">Rp 18.000 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <section id="galeri" class="container">
+        <div class="section-title">
+          <h1>Sample Makanan</h1>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./img/5.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/6.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/7.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/8.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/9.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/10.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/11.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/12.jpeg"  />
+          </div>
+        </div>
+      </section>
+
+      <section id="lokasi" class="maps-section">
+        <div class="container">
+          <div class="section-title">
+            <h1>More Information</h1>
+          </div>
+          <div class="maps-container">
+            <!-- Cabang Pusat -->
+            <div class="maps-location">
+              <h3>Kediri </h3>
+              <div class="maps-content">
+                <div class="maps-info">
+                  <p>
+                    <strong>Alamat:</strong><br />
+                    Ds.Maduretno-Kec.Papar-Kab.Kediri
+                  </p>
+                  <p>
+                    <strong>Jam Buka:</strong><br />
+                    Senin - Minggu, 08.00 - 15.00 WIB
+                  </p>
+                </div>
+                <div class="maps-embed">
+                  <iframe
+                    src="//www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7907.695703094444!2d112.09375!3d-7.699472!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDEnNTguMSJTIDExMsKwMDUnMzcuNSJF!5e0!3m2!1sid!2sid!4v1734160819090!5m2!1sid!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <h3>Warung Ngopino</h3>
+          <!-- <p>&copy; 2024 Hak Cipta Dilindungi</p> -->
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/p/DCtBrchPMIT/?igsh=Z2I2N2VhbmtndXRw"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1A5YHCgBx8/?mibextid=qi2Omg"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+            href="https://wa.me/+6285855264301"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
